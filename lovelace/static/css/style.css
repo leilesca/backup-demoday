@@ -345,3 +345,45 @@ input{
         display: block;
     }
 }
+
+/* RETORNO GUIA */
+.titulo{
+    height: 10vh;
+    font-family: "Poiret one";
+    font-weight: bold;
+    background-color: #FF99B5;
+    margin:0;
+    color:white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.info{
+    margin-right: 60px;
+    margin-top: 20px;
+    display: flex;
+    margin-left: 50px;
+    text-align: center;
+    justify-content: space-around;
+    background-color: rgb(243, 231, 234);
+}
+.foto{
+    margin-top: 10px;
+    height: 70%;
+    width:auto;
+}
+.nome{
+    color:white;
+    padding:5pt;
+    background-color: #FF0047;
+    font-family: "poiret one";
+    font-weight: bold;
+    font-size: 22pt;
+}
+.info-texto p{
+    font-family: "poiret one";
+    font-weight: bold;
+}
+.info-texto p:nth-child(2){
+    font-size:18pt;
+}
