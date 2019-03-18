@@ -366,11 +366,17 @@ input{
     text-align: center;
     justify-content: space-around;
     background-color: rgb(243, 231, 234);
+    box-shadow:-7px 7px 3px #FF99B5;
+    cursor:pointer;
 }
 .foto{
-    margin-top: 10px;
+    margin-top: 8px;
     height: 70%;
     width:auto;
+    border:solid;
+    border-width: medium;
+    border-color: rgb(240, 173, 190)
+    
 }
 .nome{
     color:white;
@@ -386,4 +392,10 @@ input{
 }
 .info-texto p:nth-child(2){
     font-size:18pt;
+}
+/* RETORNO PARCEIRAS */
+.info-parceiras {
+    display:flex;
+    font-family: "poiret one";
+    font-weight: bold;
 }
