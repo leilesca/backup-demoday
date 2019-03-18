@@ -5,14 +5,16 @@ body{
 /* LAYOUT */
 
 nav{  
-    
-    height: 10%;
+    height: 7%;
     display:flex;
+    justify-content: space-between;
+    align-items: center;
     flex-direction: row;
     background-color: white;
     text-align: center;
 }
 nav a{
+    font-size: 14pt;
     text-decoration: none;
     font-family: "Poiret One";
     font-weight: bold;
@@ -24,6 +26,30 @@ nav img{
     margin: 0 10px;
     width: 35px;
     height: auto;
+}
+#search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#search input{
+    margin-left:0;
+    font-size:16pt;
+}
+#search input[type="text"]{
+    height: 35px;
+    border:solid;
+    border-width: thin;
+    border-radius: 12px;
+    border-color:#FF99B5;
+    font-size:12pt;
+}
+#search input[type="image"]{
+    height:60%;
+    width: auto;
+    background-color: white;
+    padding:7px;
+    border-radius:50%;
 }
 header{
     background-color:black;
@@ -232,19 +258,26 @@ input{
     justify-content: center;
     align-items: center;
 }
-#pagina-guia img{
+.categorias{
     width: 400px;
-    height: 250px;
-    display: flex;
+    height: 250px; 
     background-color: rgb(243, 231, 234);
     box-shadow:-12px 12px 3px #FF99B5;
     border-radius:10px;
     margin: 0 40px 0;
     margin-bottom: 30px;
     cursor:pointer;
+    display:block;
+    text-align: center;
 }
-#pagina-guia div p{
-    margin-bottom: 3px;
+
+#pagina-guia img{
+    height: 70%;
+    width:auto;
+}
+#pagina-guia p{
+    padding-top:10px;
+    margin-bottom:5px;
     font-family: "Poiret one";
     display: flex;
     justify-content: center;
@@ -340,12 +373,6 @@ input{
 } */
 
 
-@media (max_width:768px){
-    toggle{
-        display: block;
-    }
-}
-
 /* RETORNO GUIA */
 .titulo{
     height: 10vh;
@@ -375,10 +402,12 @@ input{
     width:auto;
     border:solid;
     border-width: medium;
-    border-color: rgb(240, 173, 190)
+    border-color: rgb(240, 173, 190);
+    margin-bottom: 8px;
     
 }
 .nome{
+    width:100%;
     color:white;
     padding:5pt;
     background-color: #FF0047;
@@ -386,16 +415,39 @@ input{
     font-weight: bold;
     font-size: 22pt;
 }
+
 .info-texto p{
     font-family: "poiret one";
     font-weight: bold;
+
 }
 .info-texto p:nth-child(2){
     font-size:18pt;
 }
 /* RETORNO PARCEIRAS */
 .info-parceiras {
+    background-color: rgb(243, 231, 234);
+    height:40vh;
+    width: 90vw;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     display:flex;
+    justify-content: space-around;
+    font-family: "poiret one";
+    font-weight: bold;
+    box-shadow:-7px 7px 3px #FF99B5;
+}
+.foto-parceira{
+    margin-top: 40px;
+    height: 70%;
+    width:auto;
+    border:solid;
+    border-width: medium;
+    border-color: rgb(240, 173, 190);
+    
+}
+.info-texto-parceiras p{
     font-family: "poiret one";
     font-weight: bold;
 }

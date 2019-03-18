@@ -11,31 +11,42 @@
 </head>
 <body>
     <nav>
-        <a href='/home'>Home</a>
-        <a href="">Perfil</a> 
-        <a href="">Histórico</a>
-        <a href="">Seja Parceira</a>
-        <a href="">Ajuda</a>
+        <div id="ancoras-nav">
+            <a href='/home'>Home</a>
+            <a href="">Perfil</a> 
+            <a href="">Histórico</a>
+            <a href="">Seja Parceira</a>
+            <a href="">Ajuda</a>
+        </div>
+        <div id="search">
+            <input type="text" name="busca">
+            <input type="image" src="{% static 'icones/musica-searcher.png' %}" alt="Submit" />
+        </div>
     </nav>
+
     <div id="guia">
         <h1>PARCEIRAS</h1>
     </div>
     <h1 class="titulo">ADVOGADAS</h1>
-    <div class="info-parceiras">
+    
         {%  for i in itemsparceiras %}
         {% if i.nome == "Advogada" %}
+        <div class="info-parceiras">
             <!-- <p>{{i.nome}}</p> -->
-            <p class="nome">{{i.parceiras.nome_parceira}}</p>
-            <p>{{i.parceiras.profissao}}</p>
-            <p>{{i.parceiras.endereco_atend}}</p>
-            <p>{{i.parceiras.tipo_atend}}</p>
-            <p>{{i.parceiras.valor}}</p>
-            <p>{{i.parceiras.telefone_parceiras}}</p>
-            <p>{{i.parceiras.celular_parceiras}}</p>
-            <p>{{i.parceiras.email_parceiras}}</p><br>
-            <img class="foto" src="{% static 'dest-/1007.png' %} " alt=""> 
+            <div info-texto-parceiras>
+                <p class="nome">{{i.parceiras.nome_parceira}}</p>
+                <!-- <p>{{i.parceiras.profissao}}</p> -->
+                <p>{{i.parceiras.endereco_atend}}</p>
+                <p>Atendimento {{i.parceiras.tipo_atend}}</p>
+                <p>Valor: {{i.parceiras.valor}}</p>
+                <p>{{i.parceiras.telefone_parceiras}}/{{i.parceiras.celular_parceiras}}</p>
+                <p>{{i.parceiras.email_parceiras}}</p><br>
+            </div>
+            <img class="foto-parceira" src="{% static 'icones/dest_janaina_06.jpg' %} " alt=""> 
+        </div>
         {% endif %}
         {% endfor %}
-    </div>
+
+        <footer> <p>Desenvolvido por alunas Mastertech © Todos os direitos reservados</p></footer>
 </body>
 </html>
