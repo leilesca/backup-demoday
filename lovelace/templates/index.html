@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">    
     <title>Lovelace.</title>
 </head>
 <body>
@@ -16,7 +16,8 @@
     </header>
     <div class="index">
         <div class="login">
-            <p>LOVELACE</p>
+            <img  src="{% static 'icones/LOGO_IMAGEM.png' %} " alt=""> 
+            <P>LOVELACE</P>
             <h1>Seja bem vinda</h1>
             <input type="email" name="email" placeholder="  Email"/>
             <input type="password" name="senha" placeholder="   Senha"/>
@@ -27,6 +28,8 @@
             </div>    
         </div>
     </div>
-    <footer> <p>Desenvolvido por alunas Mastertech © Todos os direitos reservados</p></footer>
+    <footer> 
+        <img src="{% static 'icones/LOGO_IMAGEM.png' %}" alt=""> 
+        <p>Desenvolvido por alunas Mastertech © Todos os direitos reservados</p></footer>
 </body>
 </html>

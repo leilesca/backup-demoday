@@ -126,14 +126,19 @@ header img{
     font-weight: bold;
 }
 footer{
+    margin-top:100px;
     align-items: center;
     text-align: end;
     color:white;
-    background-color: #FF0047;
+    background-color:black;
     height: 7vh;
     bottom:100%;
     display:flex;
-    justify-content: center;
+    justify-content: space-between;
+}
+footer img{
+    height: 90%;
+    width:auto;
 }
 /* LOGIN */
 
@@ -146,7 +151,7 @@ footer{
 }
 .header-login h1{
     margin-top:25px;
-    color:white;;
+    color:white;
     font-family: "poiret one";
     font-weight: bold;
 }
@@ -156,46 +161,60 @@ footer{
     display: flex;
     flex-direction: column;
     align-items:center;
+    margin-top:40px;
     margin-left:10px;
+    margin-bottom:50px;
     width:25vw;
-    height: 75vh;
+    height: 80vh;
     border-width: 2px;
     border-radius: 12px;
-    background-color:#FF99B5;
+    background-color:rgb(243, 231, 234);
+    box-shadow:-7px 7px 3px #FF99B5;
     
 }
-.login p{
-    font-family:"Poiret one";
-    color:#FF0047;
-    font-weight: bold;
-    font-size:24pt;
-    margin-top:20px;
+.login img{
+    margin-top: 10px;
+    height: 30%;
+    width:50%;
+    
 }
 .index{
     display:flex;
     justify-content: center;
     margin-top:5vh;
     margin-bottom: 60px;
+    
 }
 .login h1{
-    color: white;
+    color: black;
     height: 10px;
     font-size:26pt;
     font-family: "Poiret One";
     margin-bottom:60px;
     margin-top:15px;
+    
+}
+.login p{
+    margin:0;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: "Poiret One";
+    color: #FF0047;
+
 }
 input{
     height: 40px;
     width: 240px;
-    margin:10px;
+    
 }
 .login input{
     margin:7px;
     height: 35px;
     border-radius:12px;
     align-items: center;
-    border:none;
+    border:solid;
+    border-width: thin;
+    border-color:#FF99B5;
     
 }
 .login a{
@@ -221,7 +240,7 @@ input{
 
 }
 .botoes-submit{
-    margin-top:40px;
+    margin-top:20px;
 }
 
 
@@ -244,7 +263,7 @@ input{
     align-items: center;
     justify-content: center;
     background-color: #FF99B5;
-    height:10%;
+    height:15%;
 }
 #busca input{
     width: 40%;
@@ -387,7 +406,7 @@ input{
 }
 .info{
     margin-right: 60px;
-    margin-top: 20px;
+    margin-top: 40px;
     display: flex;
     margin-left: 50px;
     text-align: center;
@@ -414,7 +433,7 @@ input{
     font-family: "poiret one";
     font-weight: bold;
     font-size: 22pt;
-}
+} 
 
 .info-texto p{
     font-family: "poiret one";
@@ -423,6 +442,54 @@ input{
 }
 .info-texto p:nth-child(2){
     font-size:18pt;
+}
+/* PARCEIRAS */
+.parceiras{
+    margin-left:20vw;
+    background: rgb(243, 231, 234);
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    margin-top:40px;
+    padding-bottom: 30px;
+    width:60%;
+    border-radius:12px;
+}
+.parceiras h1{
+    font-family: "poiret one";
+    font-weight: bold;
+    font-size:30pt;
+}
+.profissao{
+    box-shadow:-7px 7px 3px #FF99B5;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    width:60%;
+    height:40%;
+    border-radius: 12px;
+    padding:20px;
+    margin:10px;
+    background-color:white;
+    cursor: pointer;
+}
+.profissao img{
+    height:150px;
+    width:150px;
+}
+.profissao p{
+    font-family:"Poiret One";
+    font-weight: bold;
+    font-size:24px;
+    color: #FF0047;
+    margin:0;
+    margin-top:10px;
+}
+.profissao img:hover{
+    filter:brightness(150%);
+    transition: 0.3s;
 }
 /* RETORNO PARCEIRAS */
 .info-parceiras {
@@ -437,9 +504,10 @@ input{
     font-family: "poiret one";
     font-weight: bold;
     box-shadow:-7px 7px 3px #FF99B5;
+    border-radius:12px;
 }
 .foto-parceira{
-    margin-top: 40px;
+    margin-top: 30px;
     height: 70%;
     width:auto;
     border:solid;
@@ -447,7 +515,21 @@ input{
     border-color: rgb(240, 173, 190);
     
 }
-.info-texto-parceiras p{
+.nome-parceira{
+    border-radius:3px;
+    width:100%;
+    color:white;
+    padding:5pt;
+    background-color: #FF0047;
+    font-family: "poiret one";
+    font-weight: bold;
+    font-size: 22pt;
+    margin-top:20px;
+}
+.info-parceiras img{
+    border-radius:3px;
+}
+.info-texto-parceiras p{ 
     font-family: "poiret one";
     font-weight: bold;
 }
